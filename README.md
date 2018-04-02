@@ -77,8 +77,7 @@ console.log(JSON.stringify(flattenRoutes(routes), null, 2))
     "name": "bar",
     "path": "bar",
     "level": 0
-  },
-  ...
+  }
 ]
 */
 ```
