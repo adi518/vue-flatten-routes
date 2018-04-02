@@ -1,5 +1,5 @@
 // Resources
-const flattenRoutes = require('./index.js')
+const { flattenRoutes } = require('./dist')
 
 // Implementation
 const routes = [
