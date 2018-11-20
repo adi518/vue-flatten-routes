@@ -70,28 +70,31 @@ console.log(JSON.stringify(flattenRoutes(routes), null, 2))
     "level": 1,
     "root": false,
     "nested": true,
-    "hasNamedParent": false
+    "hasNamedParent": true
   },
   {
     "name": "foo-second-level-child",
     "path": "foo-second-level-child",
     "level": 2,
+    "root": false,
     "nested": true,
-    "hasNamedParent": false
+    "hasNamedParent": true
   },
   {
     "name": "foo-third-level-child",
     "path": "foo-third-level-child",
     "level": 3,
+    "root": false,
     "nested": true,
-    "hasNamedParent": false
+    "hasNamedParent": true
   },
   {
-    "name": "foo-first-level-child-nd",
-    "path": "foo-first-level-child-nd",
+    "name": "foo-2nd-first-level-child-2",
+    "path": "foo-first-level-child-2",
     "level": 1,
+    "root": false,
     "nested": true,
-    "hasNamedParent": false
+    "hasNamedParent": true
   },
   {
     "path": "bar",
@@ -104,6 +107,7 @@ console.log(JSON.stringify(flattenRoutes(routes), null, 2))
     "name": "bar-first-level-child",
     "path": "bar-first-level-child",
     "level": 1,
+    "root": false,
     "nested": true,
     "hasNamedParent": false
   },
@@ -111,6 +115,7 @@ console.log(JSON.stringify(flattenRoutes(routes), null, 2))
     "name": "bar-second-level-child",
     "path": "bar-second-level-child",
     "level": 2,
+    "root": false,
     "nested": true,
     "hasNamedParent": true
   }
