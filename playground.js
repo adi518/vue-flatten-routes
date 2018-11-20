@@ -1,7 +1,5 @@
-// Resources
-const { flattenRoutes } = require('./dist')
+const { flattenRoutes } = require('./dist/main.js')
 
-// Implementation
 const routes = [
   {
     name: 'foo',
@@ -24,14 +22,25 @@ const routes = [
         ]
       },
       {
-        name: 'foo-first-level-child-nd',
-        path: 'foo-first-level-child-nd',
+        name: 'foo-2nd-first-level-child-2',
+        path: 'foo-first-level-child-2'
       }
     ]
   },
   {
-    name: 'bar',
-    path: 'bar'
+    path: 'bar',
+    children: [
+      {
+        name: 'bar-first-level-child',
+        path: 'bar-first-level-child',
+        children: [
+          {
+            name: 'bar-second-level-child',
+            path: 'bar-second-level-child'
+          }
+        ]
+      }
+    ]
   }
 ]
 
